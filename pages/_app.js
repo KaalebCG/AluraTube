@@ -35,9 +35,9 @@ function MyApp({ Component, pageProps }) {
   const contexto = React.useContext(ColorModeContext);
   return (
     <ThemeProvider theme={theme[contexto.mode]}>
-      <CSSReset />;
-      <Component {...pageProps} />;
-      <RegisterVideo/>
+      <CSSReset />
+      <Component {...pageProps} />
+      <RegisterVideo />
     </ThemeProvider>
   );
 }
